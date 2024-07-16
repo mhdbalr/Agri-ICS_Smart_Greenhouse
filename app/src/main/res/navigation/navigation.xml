@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.example.tesberanda.fragment.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_nutrientFragment"
+            app:destination="@id/nutrientFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_microclimateFragment"
+            app:destination="@id/microclimateFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_soilFragment"
+            app:destination="@id/soilFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_tableFragment"
+            app:destination="@id/tableFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutrientFragment"
+        android:name="com.example.tesberanda.fragment.NutrientFragment"
+        android:label="fragment_nutrient"
+        tools:layout="@layout/fragment_nutrient" >
+    </fragment>
+    <fragment
+        android:id="@+id/microclimateFragment"
+        android:name="com.example.tesberanda.fragment.MicroclimateFragment"
+        android:label="fragment_microclimate"
+        tools:layout="@layout/fragment_microclimate" >
+    </fragment>
+    <fragment
+        android:id="@+id/soilFragment"
+        android:name="com.example.tesberanda.fragment.SoilFragment"
+        android:label="fragment_soil"
+        tools:layout="@layout/fragment_soil" />
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="com.example.tesberanda.fragment.TableFragment"
+        android:label="TableFragment" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.tesberanda.fragment.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>

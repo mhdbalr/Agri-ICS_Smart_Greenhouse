@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GrafikFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_toolbar"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginHorizontal="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/shape_header"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/shape_bulat"
+                android:src="@drawable/logoproject" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/agri_ics" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+                <ImageView
+                    android:layout_marginTop="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="31dp"
+                    android:src="@drawable/tv_graph"
+                    android:layout_gravity="center_horizontal" />
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/phChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tdsChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/suhuAirChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/windDirectionChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/kecepatanAnginChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/berat1Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/waterflow1Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/waterflow2Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/waterflow3Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/waterflow4Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/soilmoisture1Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/soilmoisture2Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/soilmoisture3Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/soilmoisture4Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/berat2Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/berat3Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/berat4Chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/suhuChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tekananUdaraChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/pompaNutrisiChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/humidityChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/svpChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/avpChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/vpdChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginBottom="20dp"
+                android:id="@+id/temperaturedhtChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

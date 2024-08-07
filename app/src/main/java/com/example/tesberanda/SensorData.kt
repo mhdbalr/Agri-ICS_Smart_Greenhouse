@@ -1,7 +1,6 @@
 package com.example.tesberanda
 
 import com.google.gson.annotations.SerializedName
-
 data class SensorData(
         @SerializedName("timestamp") val timestamp: String,
         @SerializedName("id") val id: Int,
@@ -9,7 +8,7 @@ data class SensorData(
         @SerializedName("tds") val tds: Int,
         @SerializedName("suhu_air") val suhuAir: Double,
         @SerializedName("winddirection") val windDirection: Double,
-        @SerializedName("kecepatan_angin") val kecepatanAngin: Int,
+        @SerializedName("kecepatan_angin") val kecepatanAngin: Double,
         @SerializedName("berat1") val berat1: Int,
         @SerializedName("waterflow1") val waterFlow1: Int,
         @SerializedName("waterflow2") val waterFlow2: Int,
@@ -26,8 +25,6 @@ data class SensorData(
         @SerializedName("tekanan_udara") val tekananUdara: Double,
         @SerializedName("pompanutrisi") val pompaNutrisi: Int,
         @SerializedName("pompaair") val pompaAir: Int,
-        @SerializedName("lampuuv") val lampuUv: Int,
-        @SerializedName("pyrano") val pyrano: Any?,
         @SerializedName("humidity") val humidity: Double,
         @SerializedName("svp") val svp: Double,
         @SerializedName("avp") val avp: Double,

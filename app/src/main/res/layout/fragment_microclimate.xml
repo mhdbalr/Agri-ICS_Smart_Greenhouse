@@ -279,7 +279,7 @@
                                 android:layout_height="20dp"
                                 app:cardCornerRadius="10dp"
                                 app:cardBackgroundColor="@color/white"
-                                android:layout_marginHorizontal="80dp"
+                                android:layout_marginHorizontal="50dp"
                                 android:layout_gravity="center_vertical"/>
                         </LinearLayout>
 

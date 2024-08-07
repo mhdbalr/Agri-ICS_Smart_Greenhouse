@@ -62,6 +62,10 @@ class BerandaFragment : Fragment() {
 //            findNavController().navigate(R.id.action_berandaFragment_to_tableFragment)
         }
 
+        binding.btnGraph.setOnClickListener {
+            (requireActivity() as MainActivity).openFragment(GrafikFragment())
+        }
+
         // Setup data loading
         loadData()
     }
